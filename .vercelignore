@@ -1,0 +1,7 @@
+
+app.py
+Dockerfile
+requirements.txt
+best.pt
+.venv/
+__pycache__/
