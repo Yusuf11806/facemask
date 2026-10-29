@@ -11,10 +11,10 @@ app = Flask(__name__)
 CORS(app)
 
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "best.pt")
-# Google Drive direct file URL
+
 DRIVE_URL = "https://drive.google.com/uc?id=1sPIpagCkQTtqhL_JvZVMFq3re6QOYYID"
 
-# Download model from Google Drive if it doesn't exist locally
+
 if not os.path.exists(MODEL_PATH):
     print("Downloading best.pt model from Google Drive...")
     gdown.download(DRIVE_URL, MODEL_PATH, quiet=False)
